@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<launch>
+
+  <!-- Open the model file -->
+  <arg name="robot_xacro" default="$(find bringup)/robot_description/urdf/robot.xacro"/>
+  <param name="robot_description" command="$(find xacro)/xacro '$(arg robot_xacro)'"/>
+
+  <!-- Add the transformations -->
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+
+</launch>
