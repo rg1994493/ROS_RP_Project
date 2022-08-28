@@ -2,8 +2,8 @@
 WorldInfo {
 }
 Viewpoint {
-  orientation 0.16904043758145687 0.45872992729293216 -0.8723486598075855 1.5372398842923736
-  position 0.32119575637480124 2.7205809965443875 2.298080856644882
+  orientation -0.5773502691896258 0.5773502691896258 0.5773502691896258 2.0944
+  position 0.5165994701966019 0.20251789031196288 6.326593053308034
 }
 TexturedBackground {
 }
@@ -14,8 +14,8 @@ RectangleArena {
   wallHeight 0.3
 }
 Robot {
-  translation 0.3575852556167325 0.06834645138936318 0.06767556937055502
-  rotation -4.982709253235155e-05 -2.297350437844575e-05 0.9999999984947393 -1.2228064870273432
+  translation 0.3575852318544556 0.06834869779742585 0.06767256625262254
+  rotation 2.2044580712926362e-05 8.60149294810428e-06 -0.9999999997200255 1.4846099957935552
   children [
     DEF Body Shape {
       appearance PBRAppearance {
@@ -27,7 +27,7 @@ Robot {
     }
     HingeJoint {
       jointParameters HingeJointParameters {
-        position 524.3922298149566
+        position 524.3922298154265
         axis 0 1 0
         anchor 0.12004 0.17 0.000111208
       }
@@ -37,8 +37,8 @@ Robot {
         }
       ]
       endPoint Solid {
-        translation 0.12004011150750286 0.16999998943115 0.0001112367739888177
-        rotation -0.47982653034053135 -0.6206342457918744 -0.6201448489923288 2.2462087511277455
+        translation 0.12004011150750288 0.16999998943115 0.00011123677398876914
+        rotation -0.4798265305198215 -0.6206342457225126 -0.6201448489230229 2.24620875083613
         children [
           DEF Wheel Shape {
             appearance PBRAppearance {
@@ -52,13 +52,13 @@ Robot {
         boundingObject USE Wheel
         physics DEF Physics_wheel Physics {
         }
-        linearVelocity 1.0730141361854454e-07 -3.1839440229388354e-08 4.611938645521976e-10
-        angularVelocity 1.2928366106487886e-08 -5.762941535650591e-09 -4.780518990272337e-09
+        linearVelocity 4.747399408732813e-11 -6.890150655454864e-11 2.2299874256663949e-07
+        angularVelocity 2.7420415860867823e-09 2.4559832025302496e-10 1.1426193604886201e-09
       }
     }
     HingeJoint {
       jointParameters HingeJointParameters {
-        position 386.25288128930487
+        position 386.25288128721365
         axis 0 1 0
         anchor -0.12 0.17 0.000142255
       }
@@ -68,21 +68,21 @@ Robot {
         }
       ]
       endPoint Solid {
-        translation -0.12000576036568066 0.16999996603374848 0.00017704674415685385
-        rotation 0.05763905714824787 -0.706211571369899 -0.7056507319873755 3.256834674919284
+        translation -0.12000576036575342 0.16999996603374848 0.0001770467441448109
+        rotation 0.05763905788853587 -0.7062115713396651 -0.7056507319571655 3.2568346763961222
         children [
           USE Wheel
         ]
         name "solid(1)"
         boundingObject USE Wheel
         physics USE Physics_wheel
-        linearVelocity -7.195088148160266e-08 -1.189355903471174e-07 6.965383634415837e-10
-        angularVelocity 1.6375389935066188e-08 1.032918117318439e-08 -4.775202301067711e-09
+        linearVelocity -8.475049961107743e-11 5.562402557528494e-10 2.1421079973357301e-07
+        angularVelocity -1.0491666527256051e-08 -9.173869588370266e-10 1.142410404461345e-09
       }
     }
     HingeJoint {
       jointParameters HingeJointParameters {
-        position 347.248906370718
+        position 347.24890637025396
         axis 0 1 0
         anchor 0.12 -0.17 0.000150625
       }
@@ -92,21 +92,21 @@ Robot {
         }
       ]
       endPoint Solid {
-        translation 0.12000001124316984 -0.16999997711353795 0.00015073343184390076
-        rotation -0.5376124088785043 -0.5964629616233617 0.5959906318318605 4.128819355409421
+        translation 0.12000001124316978 -0.16999997711353795 0.00015073343184390738
+        rotation -0.5376124090568061 -0.5964629615429432 0.5959906317515056 4.128819355686188
         children [
           USE Wheel
         ]
         name "solid(2)"
         boundingObject USE Wheel
         physics USE Physics_wheel
-        linearVelocity 9.298939779299738e-08 1.0560132555803128e-07 -6.947768621536192e-10
-        angularVelocity -3.72998929611211e-09 -1.4294479061685349e-08 -4.7817334783455966e-09
+        linearVelocity 3.5380878470304666e-11 -6.932059501803039e-12 2.187890282343841e-07
+        angularVelocity -1.2601200389057209e-09 -9.723999923059184e-11 1.142560766965039e-09
       }
     }
     HingeJoint {
       jointParameters HingeJointParameters {
-        position 170.1658785260981
+        position 170.16587852789038
         axis 0 1 0
         anchor -0.12 -0.17 0.000146469
       }
@@ -116,16 +116,16 @@ Robot {
         }
       ]
       endPoint Solid {
-        translation -0.11999996265374442 -0.16999993783649273 0.00014644797067684464
-        rotation -0.9359360025118267 -0.2491207730073965 0.24892295928334732 4.6470217669370415
+        translation -0.11999996265374446 -0.16999993783649273 0.00014644797067678056
+        rotation -0.9359360020930441 -0.2491207737946957 0.24892296007002157 4.64702176649055
         children [
           USE Wheel
         ]
         name "solid(3)"
         boundingObject USE Wheel
         physics USE Physics_wheel
-        linearVelocity -1.290275022457861e-07 4.419821751014804e-08 -4.5996908511219327e-10
-        angularVelocity -1.1589416364783254e-08 4.176977452763079e-11 -4.786784602760311e-09
+        linearVelocity 9.939663474947697e-12 -5.73703031900154e-10 2.1850737647487041e-07
+        angularVelocity 1.0344642471829341e-08 8.841596443330266e-10 1.142737430598222e-09
       }
     }
     DistanceSensor {
@@ -245,11 +245,6 @@ Robot {
               size 0.025 0.15 0.025
             }
           }
-          Camera {
-            translation 0 0.07 0
-            rotation 0 0 1 1.57
-            name "CAM"
-          }
         ]
         name "solid(5)"
       }
@@ -267,7 +262,7 @@ Robot {
         }
       ]
       horizontalResolution 128
-      fieldOfView 1.57
+      fieldOfView 6.283
       numberOfLayers 1
     }
   ]
