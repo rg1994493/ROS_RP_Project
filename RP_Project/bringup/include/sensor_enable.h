@@ -14,7 +14,7 @@
 #include <geometry_msgs/Twist.h>
 
 #define TIME_STEP 32
-#define WHEEL_BASE 0.24
+#define WHEEL_BASE 0.34
 #define WHEEL_RADIUS 0.07
 
 

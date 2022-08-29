@@ -1,9 +1,10 @@
 #include <sensor_enable.h>
 
+
 SensorEnable::SensorEnable(ros::NodeHandle* nodehandle):nh_(*nodehandle){
     srv_timestep.request.value = TIME_STEP; // for all sensors
-    srv_inf.request.value = INFINITY; // for all positions of motors.
-    srv_zero.request.value = 0.0; // for all velocity of motors.
+    srv_inf.request.value = INFINITY; // for all positions of motors
+    srv_zero.request.value = 0.0; // for all velocity of motors
 
     std::cout<<srv_timestep.request.value<<std::endl;
     subscribe_name_ = nh_.subscribe("/model_name", 1, &SensorEnable::NameCallBack,this); //inorder to enable many sensors with services.
@@ -61,8 +62,6 @@ void SensorEnable::teleop(int key){
     // DOWN 317
     // LEFT 314
     // RIGTH 316
-    
-
 
     switch(key) {
 
@@ -72,9 +71,7 @@ void SensorEnable::teleop(int key){
         vec_velocity_[0].call(srv_act); 
         vec_velocity_[1].call(srv_act);
         vec_velocity_[2].call(srv_act);
-        vec_velocity_[3].call(srv_act);
-      
-       
+        vec_velocity_[3].call(srv_act);       
         break;
 
       case 317 :
@@ -83,45 +80,37 @@ void SensorEnable::teleop(int key){
         vec_velocity_[0].call(srv_act);
         vec_velocity_[1].call(srv_act);
         vec_velocity_[2].call(srv_act);
-        vec_velocity_[3].call(srv_act);
-       
-        
+        vec_velocity_[3].call(srv_act);        
         break;
 
       case 316 :
 
-        srv_act.request.value = 2;
+        srv_act.request.value = 5;
         vec_velocity_[0].call(srv_act);
         vec_velocity_[1].call(srv_act);
-        srv_act.request.value = -2;
+        srv_act.request.value = -5;
         vec_velocity_[2].call(srv_act);
-        vec_velocity_[3].call(srv_act);
-        
-        
+        vec_velocity_[3].call(srv_act);        
         break;
 
       case 314 :
 
-        srv_act.request.value = -2;
+        srv_act.request.value = -5;
         vec_velocity_[0].call(srv_act);
         vec_velocity_[1].call(srv_act);
-        srv_act.request.value = 2;
+        srv_act.request.value = 5;
         vec_velocity_[2].call(srv_act);
         vec_velocity_[3].call(srv_act);
-       
- 
         break;
 
       default :
 
-      srv_act.request.value = 0;
- 
+        srv_act.request.value = 0;
         vec_velocity_[0].call(srv_act);
         vec_velocity_[1].call(srv_act);
         vec_velocity_[2].call(srv_act);
         vec_velocity_[3].call(srv_act);
-   
-        
+           
    }
 
     std::cout<<key<<std::endl;
