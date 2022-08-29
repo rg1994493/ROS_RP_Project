@@ -1,0 +1,5 @@
+#Steps to run
+#0. install webots simulator
+#1. install ros deps
+#2. define webots install dir (export WEBOTS_HOME=/home/juan/Downloads/webots)
+#3. run master launch
