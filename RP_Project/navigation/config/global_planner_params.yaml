@@ -1,1 +1,6 @@
 base_global_planner : navfn/NavfnROS
+
+#GlobalPlanner:
+    #use_dijkstra: true
+    #use_grid_path: true 
+

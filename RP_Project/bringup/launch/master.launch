@@ -12,7 +12,7 @@
   
   <!-- URDF -->
   <include file="$(find bringup)/robot_description/launch/description.launch"/>
-  <node pkg="tf" type="static_transform_publisher" name="base2nav" args="0 0 0 0 0 0 1 base_link nav_link 100" /> 
+  <!-- <node pkg="tf" type="static_transform_publisher" name="base2nav" args="0 0 0 0 0 0 1 base_link nav_link 100" /> -->
 
   <!-- Rviz -->
 	<include file="$(find bringup)/visualization/launch/robot_viz.launch"/>
@@ -22,6 +22,7 @@
   
   <!-- MAP -->
    <node name="map_server" pkg="map_server" type="map_server" args="$(find bringup)/maps/finalMap.yaml"/> 
+   <node name="Remapping" pkg="navigation" type="remap" respawn="false" output="screen"/>
   
   <!-- Move base -->
   <include file="$(find navigation)/launch/move_base.launch"/> 
