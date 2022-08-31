@@ -1,0 +1,7 @@
+##Steps to run the program
+#0. Install Webots simulator in PC
+#1. Download the folder of the project
+#3. Create a ROS workspace and save the folder of the project inside it
+#4. Install all the ROS dependencies needed for the project (rosdep install --from-paths src --ignore-src -r -y)
+#2. Define webots install directory in the PC terminal (export WEBOTS_HOME=/home/juan/Downloads/webots)
+#3. Run the master launch file found inside the bringup folder of the project. 
